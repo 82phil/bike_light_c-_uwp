@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="BikeLight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BikeLight"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="5,5,5,5">
+        <StackPanel HorizontalAlignment="Left">
+            <TextBlock TextWrapping="Wrap" Text="LUX Reading" Width="150" Margin="0,5,0,5"/>
+            <TextBlock x:Name="txtLuxValue" TextWrapping="Wrap" Text="TextBlock" Width="150" Margin="10,5,0,20"/>
+            <ToggleSwitch x:Name="FrontRight" Header="Front Right Lights" Toggled="FrontRight_Toggled"/>
+            <ToggleSwitch x:Name="FrontLeft" Header="Front Left Lights" Toggled="FrontLeft_Toggled"/>
+            <ToggleSwitch x:Name="FrontSideRight" Header="Front Side Right Lights" Toggled="FrontSideRight_Toggled"/>
+            <ToggleSwitch x:Name="FrontSideLeft" Header="Front Side Left Lights" Toggled="FrontSideLeft_Toggled"/>
+            <ToggleSwitch x:Name="SideRight" Header="Side Right Lights" Toggled="SideRight_Toggled"/>
+            <ToggleSwitch x:Name="SideLeft" Header="Side Left Lights" Toggled="SideLeft_Toggled"/>
+            <ToggleSwitch x:Name="Rear" Header="Rear Lights" Toggled="Rear_Toggled"/>
+        </StackPanel>
+    </Grid>
+</Page>
